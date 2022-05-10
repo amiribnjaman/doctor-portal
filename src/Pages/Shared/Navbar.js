@@ -1,13 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 const Navbar = () => {
     const menus = <>
-        <li><a>Home</a></li>
-        <li><a>About</a></li>
-        <li><a>Appointment</a></li>
-        <li><a>Reviews</a></li>
-        <li><a>Contact Us</a></li>
-        <li><a>Login</a></li>
+        <li><Link to='/'>Home</Link></li>
+        <li><Link to='/'>About</Link></li>
+        <li><Link to='/'>Appointment</Link></li>
+        <li><Link to='/'>Reviews</Link></li>
+        <li><Link to='/'>Contact Us</Link></li>
+        <li><Link to='/'>Login</Link></li>
     </>
     return (
         <div className='w-11/12 mx-auto'>
@@ -21,7 +23,7 @@ const Navbar = () => {
                             {menus}
                         </ul>
                     </div>
-                    <a class="btn btn-ghost normal-case text-xl font-normal">Doctors Portal</a>
+                    <Link to='' class="btn btn-ghost normal-case text-xl font-normal">Doctors Portal</Link>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal p-0">
